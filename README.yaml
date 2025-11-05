@@ -11,7 +11,7 @@ name: Terraform Azure Log Analytics
 license: "APACHE"
 
 # Canonical GitHub repo
-github_repo: terraform-az-modules/terraform-azure-log-analytics
+github_repo: terraform-az-modules/terraform-azurerm-log-analytics
 
 # Badges to display
 badges:
