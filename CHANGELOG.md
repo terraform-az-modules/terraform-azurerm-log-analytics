@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.1.0] - 2026-08-25
+### :bug: Bug Fixes
+- [`f4b9b6a`](https://github.com/terraform-az-modules/terraform-azurerm-log-analytics/commit/f4b9b6a5016e9244695c9ffcc2d5d8fe87ff7c17) - updated variables type and support version 5.0 *(commit by [@karan-cd](https://github.com/karan-cd))*
+
+### :wrench: Chores
+- [`ae3cf76`](https://github.com/terraform-az-modules/terraform-azurerm-log-analytics/commit/ae3cf76a1ba81dce47689ef03ff0c64ae1865368) - **deps**: bump actions/checkout from 6 to 7 *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [v2.0.0] - 2026-04-21
 ### :bug: Bug Fixes
 - [`2dbd84d`](https://github.com/terraform-az-modules/terraform-azurerm-log-analytics/commit/2dbd84d8a47b128c437e7977de0bf561d64b9f18) - consolidate versions.tf, remove provider_meta, upgrade to azurerm >= 4.0 *(commit by [@anmolnagpal](https://github.com/anmolnagpal))*
@@ -30,3 +38,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Set provider: none in tf-checks for validate-only CI
 - Bump required_version to >= 1.10.0
 [v2.0.0]: https://github.com/terraform-az-modules/terraform-azurerm-log-analytics/compare/v1.0.3...v2.0.0
+[v2.1.0]: https://github.com/terraform-az-modules/terraform-azurerm-log-analytics/compare/v2.0.0...v2.1.0
