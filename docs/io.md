@@ -11,8 +11,8 @@
 | eventhub\_authorization\_rule\_id | The ID of an Event Hub Namespace Authorization Rule used to send diagnostic data. | `string` | `null` | no |
 | eventhub\_name | The name of the Event Hub where diagnostic data should be sent. | `string` | `null` | no |
 | extra\_tags | Variable to pass extra tags. | `map(string)` | `null` | no |
-| internet\_ingestion\_enabled | Flag to enable Log Analytics Workspace ingestion over the Public Internet. | `bool` | `true` | no |
-| internet\_query\_enabled | Flag to enable Log Analytics Workspace querying over the Public Internet. | `bool` | `true` | no |
+| internet\_ingestion\_access\_type | Controls public network access for Log Analytics ingestion. | `string` | `"Enabled"` | no |
+| internet\_query\_access\_type | Controls public network access for Log Analytics queries. | `string` | `"Enabled"` | no |
 | label\_order | The order of labels used to construct resource names or tags. If not specified, defaults to ['name', 'environment', 'location']. | `list(any)` | <pre>[<br>  "name",<br>  "environment",<br>  "location"<br>]</pre> | no |
 | location | The location/region where the virtual network is created. Changing this forces a new resource to be created. | `string` | `""` | no |
 | log\_analytics\_destination\_type | The destination type for logs sent to Log Analytics workspace. Possible values are AzureDiagnostics and Dedicated. | `string` | `"AzureDiagnostics"` | no |
