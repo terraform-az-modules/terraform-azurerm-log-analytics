@@ -113,16 +113,36 @@ variable "daily_quota_gb" {
   description = "The workspace daily quota for ingestion in GB. Set to -1 for unlimited ingestion."
 }
 
-variable "internet_ingestion_enabled" {
-  type        = bool
-  default     = true
-  description = "Flag to enable Log Analytics Workspace ingestion over the Public Internet."
+variable "internet_ingestion_access_type" {
+  description = "Controls public network access for Log Analytics ingestion."
+  type        = string
+  default     = "Enabled"
+
+  validation {
+    condition = contains([
+      "Enabled",
+      "Disabled",
+      "SecuredByPerimeter"
+    ], var.internet_ingestion_access_type)
+
+    error_message = "Must be Enabled, Disabled, or SecuredByPerimeter."
+  }
 }
 
-variable "internet_query_enabled" {
-  type        = bool
-  default     = true
-  description = "Flag to enable Log Analytics Workspace querying over the Public Internet."
+variable "internet_query_access_type" {
+  description = "Controls public network access for Log Analytics queries."
+  type        = string
+  default     = "Enabled"
+
+  validation {
+    condition = contains([
+      "Enabled",
+      "Disabled",
+      "SecuredByPerimeter"
+    ], var.internet_query_access_type)
+
+    error_message = "Must be Enabled, Disabled, or SecuredByPerimeter."
+  }
 }
 
 variable "log_analytics_destination_type" {
